@@ -1,8 +1,9 @@
+
 import React from 'react';
 import { type SeriesData } from '../types';
 import ContentCard from './ContentCard';
 import Hero from './Hero';
-import { ICONS } from '../constants.tsx';
+import { ICONS } from '../constants';
 
 interface InfographicDisplayProps {
   data: SeriesData;

@@ -4,13 +4,15 @@ export const SERIES_LIST: string[] = [
   "Marvel Cinematic Universe",
   "Harry Potter",
   "Game of Thrones",
+  "Stranger Things",
+  "Wednesday",
+  "Star Wars",
   "Avatar (James Cameron's movie series)",
   "Pirates of the Caribbean",
   "Friends (TV show)",
   "How I Met Your Mother",
   "Bahubali (movie series)",
   "Pushpa (Movie Series)",
-  "Star Wars"
 ];
 
 export const ICONS = {

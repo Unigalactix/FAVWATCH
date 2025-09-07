@@ -1,5 +1,6 @@
+
 import React, { useState, useCallback } from 'react';
-import { SERIES_LIST } from './constants.tsx';
+import { SERIES_LIST } from './constants';
 import { seriesDataStore } from './data/seriesData';
 import { type SeriesData } from './types';
 
