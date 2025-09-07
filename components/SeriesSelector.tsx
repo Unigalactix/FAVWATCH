@@ -1,14 +1,12 @@
-
 import React from 'react';
 
 interface SeriesSelectorProps {
   seriesList: string[];
   selectedSeries: string;
   onSeriesChange: (series: string) => void;
-  isLoading: boolean;
 }
 
-const SeriesSelector: React.FC<SeriesSelectorProps> = ({ seriesList, selectedSeries, onSeriesChange, isLoading }) => {
+const SeriesSelector: React.FC<SeriesSelectorProps> = ({ seriesList, selectedSeries, onSeriesChange }) => {
   return (
     <div className="flex flex-col items-center">
       <label htmlFor="series-select" className="text-lg font-semibold text-slate-300 mb-2">
@@ -19,8 +17,7 @@ const SeriesSelector: React.FC<SeriesSelectorProps> = ({ seriesList, selectedSer
           id="series-select"
           value={selectedSeries}
           onChange={(e) => onSeriesChange(e.target.value)}
-          disabled={isLoading}
-          className="appearance-none w-72 md:w-96 bg-slate-800 border border-slate-600 text-white py-3 px-4 pr-8 rounded-lg leading-tight focus:outline-none focus:bg-slate-700 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/50 transition duration-300 ease-in-out disabled:opacity-50 disabled:cursor-not-allowed"
+          className="appearance-none w-72 md:w-96 bg-slate-800 border border-slate-600 text-white py-3 px-4 pr-8 rounded-lg leading-tight focus:outline-none focus:bg-slate-700 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/50 transition duration-300 ease-in-out"
         >
           <option value="">-- Select a Series --</option>
           {seriesList.map((series) => (
